@@ -13,6 +13,7 @@
     ],
     # TODO: SCTP_DEBUG must be dynamic based on a condition variable in common.gyp.
     # 'defines': [ 'SCTP_DEBUG' ],
+    'defines': ['SINGLE_UDP_PORT'],
     'sources':
     [
       # C++ source files.
@@ -84,6 +85,7 @@
       'src/RTC/TransportTuple.cpp',
       'src/RTC/TrendCalculator.cpp',
       'src/RTC/UdpSocket.cpp',
+      'src/RTC/SingleUdpSocket.cpp',
       'src/RTC/WebRtcTransport.cpp',
       'src/RTC/Codecs/H264.cpp',
       'src/RTC/Codecs/VP8.cpp',
@@ -201,6 +203,7 @@
       'include/RTC/TransportTuple.hpp',
       'include/RTC/TrendCalculator.hpp',
       'include/RTC/UdpSocket.hpp',
+      'include/RTC/SingleUdpSocket.hpp',
       'include/RTC/WebRtcTransport.hpp',
       'include/RTC/Codecs/Tools.hpp',
       'include/RTC/Codecs/PayloadDescriptorHandler.hpp',
